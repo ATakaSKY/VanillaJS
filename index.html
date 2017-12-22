@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS sandbox</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet">
+
+    <style>
+
+        .alert{
+            color:#fff;
+            padding:10px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .success{
+            background: green;
+        }
+
+        .error{
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Book List</h1>
+
+        <form id="submitListBtn"> 
+            <div class="row">
+                <div class="twelve columns">
+                    <label for="bookName">Book Name</label>
+                    <input class="u-full-width" type="text" placeholder="book name" id="bookName">
+                </div>
+
+                <div class="twelve columns">
+                    <label for="bookNumber">Book#</label>
+                    <input class="u-full-width" type="number" placeholder="book number" id="bookNumber">
+                </div>
+
+                <div class="twelve columns">
+                    <label for="price">Price</label>
+                    <input class="u-full-width" type="number" placeholder="price" id="price">
+                </div>
+
+                <input type="submit" class="u-full-width" value="Add Book">
+            </div>
+        </form>
+
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Book Name</th>
+                    <th>Book Number</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <button class="button-primary u-full-width" id="clearList">Clear book list</button>
+    </div>
+
+    <script src="es6.js"></script>
+
+</body>
+
+</html>
